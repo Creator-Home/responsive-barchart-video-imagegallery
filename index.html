@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-----------------CSS Styles -------------------->
+
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+    <!-----------------Bootstrap and Font Awesome -------------------->
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-----------------Video Plugins -------------------->
+
+
+    <title>Responsive Design</title>
+</head>
+
+<body>
+    <!-----------Navigation HTML ------------>
+    <section id="nav">
+        <nav class="navbar navbar-expand-lg  navv nav-logo fixed-top">
+            <a class="navbar-brand" data-scroll href="#top">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto nav nav-list">
+                    <a class="nav-item nav-link active" data-scroll href="#images">Images <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" data-scroll href="#videos">Videos</a>
+                    <a class="nav-item nav-link" data-scroll href="#charts">Charts</a>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+
+    <!-----------Banner HTML ------------>
+    <section id="banner">
+        <div class="container-fluid" id="banner">
+            <div class="row banner">
+                <div class="col-md-3 sm-3"></div>
+                <div class="col-md-6 sm-6">
+                    <div class="content text-center">
+                        <h1>Responsive Website Design</h1>
+                    </div>
+                    <div class="icon text-center">
+                        <a data-scroll href="#footer"><i class="fa fa-arrow-down bounce"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 sm-3"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-----------Images HTML ------------>
+    <section id="images">
+        <div class="container-fluid">
+            <div class="row text-center">
+
+                <div class="col-md-3"></div>
+                <div class="col-md-6 text-center element">
+                    <h1 data-aos="fade-up" data-aos-duration="1000">Simple Image Slider With Zoom</h1>
+                </div>
+                <div class="col-md-3"></div>
+
+            </div>
+            <div class="row">
+                <div id="slider-container" class="slider">
+                    <div class="slide" data-aos="flip-up" data-aos-duration="1000">
+                        <img src="./img/11.jpg" alt="">
+                    </div>
+                    <div class="slide" data-aos="flip-right" data-aos-duration="1000">
+                        <img src="./img/10.jpg" alt="">
+                    </div>
+                    <div class="slide" data-aos="flip-down" data-aos-duration="1000">
+                        <img src="./img/9.jpg" alt="">
+                    </div>
+                    <div class="slide" data-aos="flip-left" data-aos-duration="1000">
+                        <img src="./img/8.jpg" alt="">
+                    </div>
+                    <div class="slide" data-aos="flip-up" data-aos-duration="1000">
+                        <img src="./img/7.jpg" alt="">
+                    </div>
+                    <div class="slide" data-aos="flip-right" data-aos-duration="1000">
+                        <img src="./img/6.jpg" alt="">
+                    </div>
+                    <div class="slide" data-aos="flip-down" data-aos-duration="1000">
+                        <img src="./img/5.jpg" alt="">
+                    </div>
+                    <div class="slide" data-aos="flip-left" data-aos-duration="1000">
+                        <img src="./img/4.jpg" alt="">
+                    </div>
+                    <div class="slide" data-aos="flip-up" data-aos-duration="1000">
+                        <img src="./img/3.jpg" alt="">
+                    </div>
+                    <div class="slide" data-aos="flip-right" data-aos-duration="1000">
+                        <img src="./img/2.jpg" alt="">
+                    </div>
+                    <div class="slide" data-aos="flip-down" data-aos-duration="1000">
+                        <img src="./img/1.jpg" alt="">
+                    </div>
+                    <div onclick="prev()" class="control-prev-btn">
+                        <i class="fas fa-arrow-left"></i>
+                    </div>
+                    <div onclick="next()" class="control-next-btn">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </section>
+
+
+    <!-----------Videos HTML ------------>
+    <section id="videos">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6 text-center element">
+                    <h1 data-aos="fade-up" data-aos-duration="1000">Simple Video Player</h1>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+            <div class="row">
+                <div class="vid-main-wrapper clearfix" data-aos="zoom-out-up" data-aos-duration="2000">
+
+                    <!-- THE YOUTUBE PLAYER -->
+                    <div class="vid-container">
+                        <iframe id="vid_frame"
+                            src="https://www.youtube.com/embed/cOSEOYi9JS4?rel=0&showinfo=0&autohide=1" frameborder="0"
+                            width="560" height="315"></iframe>
+                    </div>
+
+                    <!-- THE PLAYLIST -->
+                    <div class="vid-list-container">
+                        <ol id="vid-list">
+                            <li>
+                                <a href="javascript:void();"
+                                    onClick="document.getElementById('vid_frame').src='https://youtube.com/embed/cOSEOYi9JS4?autoplay=1&rel=0&showinfo=0&autohide=1'">
+                                    <span class="vid-thumb"><img width=72
+                                            src="https://img.youtube.com/vi/cOSEOYi9JS4/default.jpg" /></span>
+                                    <div class="desc">WeatherBeater™ Product Video</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void();"
+                                    onClick="document.getElementById('vid_frame').src='https://youtube.com/embed/9P7mEf4bilg?autoplay=1&rel=0&showinfo=0&autohide=1'">
+                                    <span class="vid-thumb"><img width=72
+                                            src="https://img.youtube.com/vi/9P7mEf4bilg/default.jpg" /></span>
+                                    <div class="desc">X-act Contour® Product Video</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void();"
+                                    onClick="document.getElementById('vid_frame').src='https://youtube.com/embed/KHxNpXovl58?autoplay=1&rel=0&showinfo=0&autohide=1'">
+                                    <span class="vid-thumb"><img width=72
+                                            src="https://img.youtube.com/vi/KHxNpXovl58/default.jpg" /></span>
+                                    <div class="desc">GearBox® Product Video</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void();"
+                                    onClick="document.getElementById('vid_frame').src='https://youtube.com/embed/D_a2UBGsePQ?autoplay=1&rel=0&showinfo=0&autohide=1'">
+                                    <span class="vid-thumb"><img width=72
+                                            src="https://img.youtube.com/vi/D_a2UBGsePQ/default.jpg" /></span>
+                                    <div class="desc">Mud Guards Product Video</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void();"
+                                    onClick="document.getElementById('vid_frame').src='https://youtube.com/embed/vYoh2IgoBXg?autoplay=1&rel=0&showinfo=0&autohide=1'">
+                                    <span class="vid-thumb"><img width=72
+                                            src="https://img.youtube.com/vi/vYoh2IgoBXg/default.jpg" /></span>
+                                    <div class="desc">Wheel Well Guards Product Video</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void();"
+                                    onClick="document.getElementById('vid_frame').src='https://youtube.com/embed/RTHI_uGyfTM?autoplay=1&rel=0&showinfo=0&autohide=1'">
+                                    <span class="vid-thumb"><img width=72
+                                            src="https://img.youtube.com/vi/RTHI_uGyfTM/default.jpg" /></span>
+                                    <div class="desc">Cargo Liner Product Video</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void();"
+                                    onClick="document.getElementById('vid_frame').src='https://youtube.com/embed/EvTjAjLNphE?autoplay=1&rel=0&showinfo=0&autohide=1'">
+                                    <span class="vid-thumb"><img width=72
+                                            src="https://img.youtube.com/vi/EvTjAjLNphE/default.jpg" /></span>
+                                    <div class="desc">Husky Liners Products</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void();"
+                                    onClick="document.getElementById('vid_frame').src='https://youtube.com/embed/-Qpc79oaJQg?autoplay=1&rel=0&showinfo=0&autohide=1'">
+                                    <span class="vid-thumb"><img width=72
+                                            src="https://img.youtube.com/vi/-Qpc79oaJQg/default.jpg" /></span>
+                                    <div class="desc">Custom Molded Mud Guards</div>
+                                </a>
+                            </li>
+
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-----------Charts HTML ------------>
+
+    <section id="charts">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6 text-center element">
+                    <h1 data-aos="fade-up" data-aos-duration="1000">Simple Bar Chart</h1>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+            <div class="row">
+                <main data-aos="zoom-in-down" data-aos-duration="2000">
+                    <h5>Daily Page Hits</h5>
+                    <div id="bar-chart"></div>
+                </main>
+            </div>
+    </section>
+
+    <div class="scroll_up">
+        <a data-scroll href="#top"><i class="fas fa-arrow-up"></i></a></i>
+    </div>
+
+    <!-----------Footer HTML ------------>
+    <section id="footer">
+        <div class="container-fluid footer">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="contact text-center">
+                                    <p>Location</p>
+                                    <i class="fa fa-street-view"></i>
+                                    <h6>Accra - Ghana</h6>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="contact text-center">
+                                    <p>Email</p>
+                                    <i class="fa fa-envelope"></i>
+                                    <h6>solomontetteh.st@outlook.com</h6>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="contact text-center">
+                                    <p>Phone</p>
+                                    <i class="fa fa-phone"></i>
+                                    <h6>+233 554-536-187</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="social_icons text-center">
+                        <a href="https://web.facebook.com/solomon.kylebryan"> <i class="fab fa-facebook facebook"></i>
+                        </a>
+                        <a href="https://twitter.com/mcbryan1z"> <i class="fab fa-twitter twitter"></i> </a>
+                        <a href="https://github.com/mcbryan1"> <i class="fab fa-github github"></i> </a>
+                        <a href="https://www.linkedin.com/in/solomon-tetteh-a7b605190/"> <i
+                                class="fab fa-linkedin linkedin"></i> </a>
+                        <a href="https://www.instagram.com/else_coding/?hl=en"> <i
+                                class="fab fa-instagram instagram"></i> </a>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="quick_links text-center">
+                                <a  class="link" data-scroll href="#images">Images</a>
+                                <a class="link" data-scroll href="#videos">Videos</a>
+                                <a class="link" data-scroll href="#charts">Charts</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-----------------Jquery, Popper, Bootstrap -------------------->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="./assets/js/jquery-3.4.1.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!------------------- Bar Chart JS ------------------------>
+    <script>
+        google.load("visualization", "1", {
+            packages: ["corechart"]
+        });
+        google.setOnLoadCallback(drawCharts);
+
+        function drawCharts() {
+
+            // actual bar chart data
+            var barData = google.visualization.arrayToDataTable([
+                ['Day', 'Page Views', 'Unique Views'],
+                ['Sun', 1050, 600],
+                ['Mon', 1370, 910],
+                ['Tue', 660, 400],
+                ['Wed', 1030, 540],
+                ['Thu', 1000, 480],
+                ['Fri', 1170, 960],
+                ['Sat', 660, 320]
+            ]);
+            // set bar chart options
+            var barOptions = {
+                focusTarget: 'category',
+                backgroundColor: 'transparent',
+                colors: ['cornflowerblue', 'tomato'],
+                fontName: 'Open Sans',
+                chartArea: {
+                    left: 50,
+                    top: 10,
+                    width: '100%',
+                    height: '70%'
+                },
+                bar: {
+                    groupWidth: '80%'
+                },
+                hAxis: {
+                    textStyle: {
+                        fontSize: 11
+                    }
+                },
+                vAxis: {
+                    minValue: 0,
+                    maxValue: 1500,
+                    baselineColor: '#DDD',
+                    gridlines: {
+                        color: '#DDD',
+                        count: 4
+                    },
+                    textStyle: {
+                        fontSize: 11
+                    }
+                },
+                legend: {
+                    position: 'bottom',
+                    textStyle: {
+                        fontSize: 12
+                    }
+                },
+                animation: {
+                    duration: 1200,
+                    easing: 'out',
+                    startup: true
+                }
+            };
+            // draw bar chart twice so it animates
+            var barChart = new google.visualization.ColumnChart(document.getElementById('bar-chart'));
+            //barChart.draw(barZeroData, barOptions);
+            barChart.draw(barData, barOptions);
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js">
+    </script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 700,
+            speedAsDuration: true
+        });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
